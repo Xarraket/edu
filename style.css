@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease-in-out;
+}
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+.hero {
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+.login-form {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    display: none;
+}
+.login-form.show {
+    opacity: 1;
+    transform: translateY(0);
+    display: block;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
