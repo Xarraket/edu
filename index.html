@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интерактивный образовательный портал</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Главный экран</a></li>
+                <li><a href="#">Раздел</a></li>
+                <li><a href="#">Тестирование</a></li>
+                <li><a href="#">Форум</a></li>
+            </ul>
+            <div class="toggle-container">
+                <span>Личный кабинет</span>
+                <button id="toggle-login">ЛК</button>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <h1>Интерактивный образовательный портал</h1>
+            <img src="philosopher.png" alt="Статуя философа за ноутбуком">
+        </section>
+        
+        <section class="login-form" id="login-section">
+            <input type="text" id="name" placeholder="Имя">
+            <input type="text" id="surname" placeholder="Фамилия">
+            <input type="email" id="email" placeholder="Почта">
+            <input type="tel" id="phone" placeholder="Номер">
+            <button id="login-btn">Войти</button>
+            <button id="register-btn">Зарегистрироваться</button>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
